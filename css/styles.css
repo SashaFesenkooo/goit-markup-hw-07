@@ -547,17 +547,17 @@ p {
   color: var(--nav-color);
 }
 
-/* Three Section */
+                                         /* Three Section */
 
 .team {
   background-color: var(--fsection-color);
 }
 
-.list-ttl {
+.command {
   display: flex;
 }
 
-.list-ttl .items {
+.command__items {
   background-color: var(--nav-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -567,11 +567,16 @@ p {
   width: calc(100% - 90px / 4);
 }
 
-.list-ttl .items:not(:last-child) {
+.command__items:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-title {
+.command__img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.command__title {
   color: var(--main-font-color);
   font-weight: 500;
   font-size: 16px;
@@ -580,7 +585,7 @@ p {
   margin-bottom: 10px;
 }
 
-.team-sub {
+.comand__text {
   color: var(--second-font-color);
   font-size: 16px;
   line-height: 1.18;
@@ -588,18 +593,13 @@ p {
   margin-bottom: 16px;
 }
 
-.img {
-  display: block;
-  margin-bottom: 30px;
-}
-
-.team-social {
+.social {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.icon-shape {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -608,25 +608,25 @@ p {
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-item {
+.social__item {
   margin-bottom: 30px;
 }
 
-.icon-shape:hover,
-.icon-shape:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--logo-color);
 
 }
 
-.shape-item {
+.social__svg {
   fill: var(--icons-color)
 }
 
-.icon-shape:hover .shape-item,
-.icon-shape:focus .shape-item {
+.social__link:hover .social__svg,
+.social__link:focus .social__svg {
   fill: var(--nav-color);
 }
 
