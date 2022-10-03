@@ -916,22 +916,21 @@ p {
 
   transform: translateY(100%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .projects__text{
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-
   position: absolute;
   width: 322px;
   height: 168px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--nav-color);
   opacity: 0;
+  transform: translate(-50%, -50%);
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--nav-color);
 }
 
 .projects__link {
