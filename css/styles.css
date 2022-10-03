@@ -503,7 +503,7 @@ p {
 
                                         /* Two Section */
 
-.section-title {
+.title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -516,7 +516,7 @@ p {
   display: flex;
 }
 
-.label-link::before {
+.label__list::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -525,17 +525,17 @@ p {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.label .label-link {
+.label__list {
   margin-right: 30px;
   width: calc(100% - 60px / 3);
   position: relative;
 }
 
-.label-link .benefits {
+.label__image {
   display: block;
 }
 
-.desc {
+.label__text {
   position: absolute;
   font-size: 14px;
   text-transform: uppercase;
