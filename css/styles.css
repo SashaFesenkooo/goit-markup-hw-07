@@ -887,26 +887,26 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects__link:hover .projects__overlay,
-.projects__link:focus .projects__overlay {
+.projects__link:hover .overlay,
+.projects__link:focus .overlay {
   transform: translateY(0);
 }
 
-.projects__link:hover .projects__text,
-.projects__link:focus .projects__text {
+.projects__link:hover .overlay__text,
+.projects__link:focus .overlay__text {
   opacity: 1;
 }
 
-.projects__wrapper {
+.wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.projects__image {
+.wrapper__image {
   display: block;
 }
 
-.projects__overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -918,7 +918,7 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects__text{
+.overlay__text{
   position: absolute;
   width: 322px;
   height: 168px;
@@ -938,7 +938,7 @@ p {
   display: block;
 }
 
-.projects__description {
+.description {
   padding-left: 24px;
   padding-right: 24px;
   border-bottom: 1px solid var(--border-secondary-color);
@@ -946,7 +946,7 @@ p {
   border-left: 1px solid var(--border-secondary-color);
 }
 
-.projects__ttl {
+.description__ttl {
   color: var(--main-font-color);
   font-size: 18px;
   font-weight: 700;
@@ -955,7 +955,7 @@ p {
   padding-bottom: 4px;
 }
 
-.projects__desc {
+.description__desc {
   color: var(--second-font-color);
   font-size: 16px;
   line-height: 1.87;
