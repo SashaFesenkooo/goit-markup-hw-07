@@ -92,8 +92,12 @@ p {
   line-height: 1.19;
 }
 
-.slogan {
+.logo__text {
   color: var(--black-color);
+}
+
+.logo__text--inverse {
+  color: var(--nav-color);
 }
 
 .site-nav {
@@ -688,10 +692,6 @@ p {
   margin-right: 70px;
 }
 
-.caption {
-  color: var(--nav-color);
-}
-
 .content__list:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -846,10 +846,7 @@ p {
   font-weight: 500;
   line-height: 1.62;
   cursor: pointer;
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product-list__btn:hover,
@@ -880,6 +877,11 @@ p {
   margin-right: 30px;
 }
 
+.projects__link {
+  text-decoration: none;
+  display: block;
+}
+
 .projects__link:hover,
 .projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -887,13 +889,13 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects__link:hover .overlay,
-.projects__link:focus .overlay {
+.projects__link:hover .wrapper__overlay,
+.projects__link:focus .wrapper__overlay {
   transform: translateY(0);
 }
 
-.projects__link:hover .overlay__text,
-.projects__link:focus .overlay__text {
+.projects__link:hover .wrapper__text,
+.projects__link:focus .wrapper__text {
   opacity: 1;
 }
 
@@ -906,7 +908,7 @@ p {
   display: block;
 }
 
-.overlay {
+.wrapper__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -918,7 +920,7 @@ p {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay__text{
+.wrapper__text{
   position: absolute;
   width: 322px;
   height: 168px;
@@ -933,12 +935,7 @@ p {
   color: var(--nav-color);
 }
 
-.projects__link {
-  text-decoration: none;
-  display: block;
-}
-
-.description {
+.wrapper__description {
   padding-left: 24px;
   padding-right: 24px;
   border-bottom: 1px solid var(--border-secondary-color);
@@ -946,7 +943,7 @@ p {
   border-left: 1px solid var(--border-secondary-color);
 }
 
-.description__ttl {
+.wrapper__ttl {
   color: var(--main-font-color);
   font-size: 18px;
   font-weight: 700;
@@ -955,7 +952,7 @@ p {
   padding-bottom: 4px;
 }
 
-.description__desc {
+.wrapper__desc {
   color: var(--second-font-color);
   font-size: 16px;
   line-height: 1.87;
