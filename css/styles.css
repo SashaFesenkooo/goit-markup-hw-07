@@ -697,7 +697,7 @@ p {
 }
 
 .content__link {
-  color: var(--nav-color);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -714,11 +714,7 @@ p {
 }
 
 .content__link--current {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.content__link--current:last-child {
-  margin-bottom: 0;
+  color: var(--nav-color);
 }
 
 .content__link--current:hover,
