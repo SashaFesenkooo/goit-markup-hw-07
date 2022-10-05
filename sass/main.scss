@@ -1,17 +1,8 @@
-$logo-color: #2196F3;
-$logo-secondary-color: #188CE8;
-$black-color: #000000;
-$brand-color: #F5F5F5;
-$nav-color: #FFFFFF;
-$headfoot-color: #2F303A;
-$fsection-color: #F5F4FA;
-$icons-color: #AFB1B8;
 
-$main-font-color: #212121;
-$second-font-color: #757575;
 
-$border-color: #ECECEC;
-$border-secondary-color: #EEEEEE;
+@import "variables";
+@import "common";
+
 
 body {
     color: $main-font-color;
@@ -38,17 +29,7 @@ p {
 
                                                  /* Container, Section */
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .section.hero {
     padding-top: 200px;
@@ -636,5 +617,180 @@ p {
             width: calc(100% - 150px / 6);
             margin-right: 30px;
     }
+
+    &__list:last-child {
+        margin-right: 0;
+      }
+
+    &__link {
+        display: flex;
+        width: 170px;
+        height: 92px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $icons-color;
+        border-radius: 4px;
+      
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+    &__link:hover &__logo,
+    &__link:focus &__logo {
+        fill: $logo-color;
+      }
+
+    &__link:hover,
+    &__link:focus {
+        border-color: $logo-color;
+    }
+
+    &__logo {
+        display: block;
+        fill: $icons-color;
+      
+        transition-duration: 250ms;
+        transition-property: fill;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
 }
 
+                                           /* Footer */
+
+
+.footer {
+  background-color: $headfoot-color;
+  padding: 60px 0;
+}
+
+.col {
+    margin-right: 70px;
+  }
+
+.content {
+    &__list:not(:last-child) {
+        margin-bottom: 9px;
+      }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;
+      
+        display: inline-block;
+      
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+      &__link:hover,
+      &__link:focus {
+        color: $logo-color;
+      }
+
+     &__link--current {
+        color: $nav-color;
+      } 
+
+     &__link--current:hover,
+     &__link--current:focus {
+        color: $logo-color;
+     } 
+}
+
+.subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $nav-color;
+  
+  }
+  
+  .meta {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .aside {
+    display: flex;
+    margin-top: 20px;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        width: 44px;
+        height: 44px;
+        
+        color: $nav-color;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+     &__svg {
+        fill: currentColor;
+      } 
+
+     &__link:hover,
+     &__link:focus {
+        background-color: $logo-color;
+    }
+} 
+
+.distribution {
+    margin-left: 93px;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: baseline;
+
+    &__input {
+        margin-top: 20px;
+        padding: 15px 16px;
+        background-color: $headfoot-color;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        width: 358px;
+        height: 50px;
+        outline: none;
+        color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 0.03em;
+        line-height: 1.25;
+      }
+  }
+
+  .knob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 28px;
+    cursor: pointer;
+    height: 50px;
+    background-color: $logo-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    margin-left: 12px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $logo-secondary-color;
+    }
+
+    &__text {
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        line-height: 1.87;
+        color: $nav-color;
+        margin-right: 10px;
+      }
+  }
+
+                           /* Portfolio Section */
