@@ -627,4 +627,14 @@ p {
     }
 }
 
+                                 /* Four section */
+
+.clients {
+    display: flex;
+
+    &__list {
+            width: calc(100% - 150px / 6);
+            margin-right: 30px;
+    }
+}
 
