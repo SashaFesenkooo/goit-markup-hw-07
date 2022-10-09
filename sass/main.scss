@@ -1,15 +1,16 @@
 //Variables
 @import "./utils/variables";
+//Layout
+@import "./layout/benefits";
+@import "./layout/clients";
+@import "./layout/hero";
+@import "./layout/team";
 //Components
 @import "./components/common";
 @import "./components/header";
-@import "./components/hero";
 @import "./components/modal";
 @import "./components/modal-form";
-@import "./components/benefits";
 @import "./components/company-work";
-@import "./components/team";
-@import "./components/clients";
 @import "./components/product-nav";
 @import "./components/projects-product";
 @import "./components/footer";
